@@ -11,7 +11,7 @@ import {exit} from 'process';
 const path = process.argv[3];
 
 if (!path || !fs.statSync(path)) {
-  console.error('Please specify the test application path');
+  console.error('Please specify the application path');
   process.exit(1);
 }
 
@@ -108,7 +108,7 @@ const sendTestRequest = async (url: string): Promise<string> => {
     if (response != '{"received":true}') {
       throw new Error(`Unexpected response ${response}`);
     }
-    console.log('Test succeeded');
+    console.log('succeeded');
     process.exit(0);
   } catch (e) {
     console.error(e);
