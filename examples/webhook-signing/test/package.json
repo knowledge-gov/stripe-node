@@ -1,7 +1,7 @@
 {
-  "name": "webhook-signing-example-koa",
+  "name": "webhook-signing-usgov",
   "version": "1.0.0",
-  "description": "Koa webhook parsing sample",
+  "description": "US Gov webhook parsing",
   "repository": {},
   "main": "./main.ts",
   "scripts": {
